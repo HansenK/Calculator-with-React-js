@@ -1,0 +1,87 @@
+body{
+  margin: 8px;
+}
+.up{
+  border: 3px solid rgb(88, 86, 86);
+  width: 424px;
+  height: 63px;
+  margin: 0px auto;
+}
+.result{
+  font-size: 60px;
+  text-align: right;
+  width: 424px;
+  height: 61px;
+  background-color: rgb(233, 133, 19);
+  border: none;
+}
+.left{
+  float: left;
+  height: 424px;
+  width: 330px;
+  background-color: rgb(88, 86, 86);
+}
+.right{
+  float: right;
+  width: 100px;
+  height: 424px;
+  background-color: rgb(88, 86, 86);
+}
+.history{
+  position: absolute;
+  top: 87px;
+  left: 180px;
+  height: 419px;
+  width: 250px;
+  border: 3px solid rgb(88, 86, 86);
+  background-color: rgb(233, 133, 19);
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.listHist{
+  list-style: none;
+  position: absolute;
+  text-align: left;
+}
+.labelHist{
+  font-size: 20px;
+}
+hr{
+  border-color: black;
+}
+.num{
+  border: none;
+  margin: 3px 3px;
+  width: 100px;
+  height: 100px;
+  font-size: 35px;
+  background-color: rgb(233, 133, 19);
+  position: relative;
+}
+.op{
+  border: none;
+  margin: 3px 1.5px;
+  height: 78.8px;
+  width: 96px;
+  font-size: 35px;
+  background-color: rgb(233, 133, 19);
+}
+.down{
+  margin: 10px auto;
+  width: 430px;
+}
+input::-webkit-input-placeholder{
+  color: black;
+}
+button:focus{
+  outline: 0;
+}
+
+input:focus{
+  outline: 0;
+}
+button:hover{
+  background-color: rgb(233, 133, 19);
+  border: 1.5px solid black;
+}
