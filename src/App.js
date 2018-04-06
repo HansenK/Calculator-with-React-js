@@ -41,7 +41,6 @@ class App extends Component {
 			}
 		}
 
-
 		if(valueB === '+' || valueB === '-' || valueB === '*' || valueB === '/' || valueB === '='){
 
 			if(valueIn !== 0 && valA === 0){
