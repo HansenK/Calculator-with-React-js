@@ -14,22 +14,23 @@ class App extends Component {
 	}
 
 	show(valueB){
-		setTimeout(function() {
-			document.getElementById(valueB).style.backgroundColor = 'rgb(233, 133, 19)';
-		}, 150);
-		document.getElementById(valueB).style.backgroundColor = 'rgb(151, 87, 13)';
-
+	
 		let valueIn = this.state.valueIn;
 		let valA = this.state.valA; 
 		let opSelect = this.state.opSelect;
 		let list = this.state.list;
 		let resHist;
+		const btOp = ['+','-','*','/','='];
 
 		if(valueB === 'C'){
 			valueIn = 0;
 			valA = 0;
 			opSelect = null;
 			list.push('*Clear*');
+			btOp.map((opr => {
+				document.getElementById(opr).style.backgroundColor = 'rgb(233, 133, 19)';
+				document.getElementById(opr).style.border = 'none';
+			}));
 		}
 		if(typeof valueB === 'number' || valueB === '.'){
 			if(valueIn === 0){
@@ -48,6 +49,22 @@ class App extends Component {
 				valueIn = 0;
 				opSelect = valueB;
 			}
+
+			btOp.map((opr => {
+				if(opr === valueB){
+					document.getElementById(valueB).style.backgroundColor = "rgb(151, 87, 13)";
+					document.getElementById(valueB).style.border = '1.5px solid black';
+				}
+				else{
+					document.getElementById(opr).style.backgroundColor = "rgb(233, 133, 19)";
+					document.getElementById(opr).style.border = 'none';
+				}
+
+				if(opr === '='){
+					document.getElementById(opr).style.backgroundColor = "rgb(233, 133, 19)";
+					document.getElementById(opr).style.border = 'none';
+				}
+			}));
 
 			if(valueIn !== 0 && valA !== 0){
 				
