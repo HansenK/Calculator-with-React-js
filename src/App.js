@@ -20,7 +20,6 @@ class App extends Component {
 		let opSelected = this.state.opSelected;
 		let list = this.state.list;
 		let resHist;
-		const btOp = ['+','-','*','/','='];
 
 		if(valueB === 'C'){
 			valueIn = 0;
