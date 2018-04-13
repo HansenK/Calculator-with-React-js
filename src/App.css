@@ -62,9 +62,6 @@ hr{
   background-color: rgb(233, 133, 19);
   position: relative;
 }
-.num:active{
-  background-color: rgb(151, 87, 13);
-}
 .op{
   border: none;
   margin: 3px 1.5px;
@@ -73,8 +70,13 @@ hr{
   font-size: 35px;
   background-color: rgb(233, 133, 19);
 }
-.op:active{
+.clicked{
+  margin: 3px 1.5px;
+  height: 78.8px;
+  width: 96px;
+  font-size: 35px;
   background-color: rgb(151, 87, 13);
+  border: 1.5px solid black;
 }
 .down{
   margin: 10px auto;
@@ -90,7 +92,10 @@ button:focus{
 input:focus{
   outline: 0;
 }
-button:hover{
+.num:hover, .op:hover{
   background-color: rgb(233, 133, 19);
   border: 1.5px solid black;
+}
+.num:active{ 
+  background-color: rgb(151, 87, 13);
 }
